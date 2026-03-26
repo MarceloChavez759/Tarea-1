@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Marcelo Chavez</title>
+    <link rel="stylesheet" href="../CSS/01.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Marcelo Chavez</h1>
+            <div class="profile-image">
+                <img src="../IMAGENES/Linoo.jpeg" alt="Foto de perfil">
+            </div>
+            <button id="darkModeToggle">🌙</button>
+        </header>
+        <main>
+            <section id="formacion">
+                <h2>Formación</h2>
+                <ul>
+                    <li><strong>Grado en Ingeniería en Sistemas Informaticos</strong> - Universidad UNVES, 2020 - 2026</li>
+                    <li><strong>Bachillerato en Ciencias</strong> - Col. Nac. Dr. Raul Peña, 2016 - 2020</li>
+                </ul>
+            </section>
+            <section id="cursos">
+                <h2>Cursos</h2>
+                <ul>
+                    <li>Desarrollo Web Full Stack - Plataforma Online, 2023</li>
+                    <li>Certificación en la Nube (AWS, Azure, o GCP) - 2023</li>
+                </ul>
+            </section>
+            <section id="experiencia">
+                <h2>Experiencia</h2>
+                <ul>
+                    <li><strong>Desarrollador Junior</strong> - Tech Solutions Inc., 2022 - Presente
+                        <p>Desarrollo y mantenimiento de aplicaciones web utilizando tecnologías modernas.</p>
+                    </li>
+                </ul>
+            </section>
+            <section id="aptitudes">
+                <h2>Aptitudes</h2>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React, Angular, Vue.js</li>
+                    <li>Node.js, Python, Java</li>
+                    <li>Bases de datos SQL y NoSQL</li>
+                </ul>
+            </section>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>Email: marcelochavez@gmail.com</li>
+                    <li>Teléfono: 0984911144</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                darkModeToggle.textContent = '☀';
+            } else {
+                darkModeToggle.textContent = '🌙';
+            }
+        });
+    </script>
+</body>
+</html>
